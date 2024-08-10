@@ -1,0 +1,97 @@
+/* General Styles */
+body {
+  font-family: "Arial", sans-serif;
+}
+
+#wrapper {
+  display: flex;
+  align-items: stretch;
+}
+
+#sidebar-wrapper {
+  min-height: 100vh;
+  width: 250px;
+  margin-left: -250px;
+  transition: margin 0.25s ease-out;
+}
+
+#sidebar-wrapper .sidebar-heading {
+  padding: 0.875rem 1.25rem;
+  font-size: 1.2rem;
+}
+
+#sidebar-wrapper .list-group {
+  width: 15rem;
+}
+
+#page-content-wrapper {
+  min-width: 100vw;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+  margin-left: 0;
+}
+
+.bg-purple {
+  background-color: #6f42c1;
+}
+
+.text-white {
+  color: #fff !important;
+}
+
+/* Image Upload Styles */
+.imgholder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.imgholder img {
+  border-radius: 50%;
+  margin-top: 1rem;
+}
+
+.upload {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.upload input {
+  position: absolute;
+  opacity: 0;
+  right: 0;
+  top: 0;
+}
+
+/* Input Field Styles */
+.inputField {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.inputField > div {
+  flex: 1 1 calc(33.333% - 1rem);
+  display: flex;
+  flex-direction: column;
+}
+
+.inputField > div > label {
+  margin-bottom: 0.5rem;
+}
+
+.inputField > div > input {
+  padding: 0.5rem;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+}
+
+/* Modal Styles */
+.modal-footer .btn {
+  min-width: 100px;
+}
